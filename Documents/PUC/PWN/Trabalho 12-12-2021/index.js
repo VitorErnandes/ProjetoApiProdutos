@@ -19,11 +19,13 @@ const produtos = {
 server.get('/produtos/:index', (req, res) => {
     const { index } = req.params;
 
+    console.log(produtos.produtos[index]);
     return res.json(produtos.produtos[index]);
 });
 
 //retorna todos os dados
 server.get('/produtos', (req, res) => {
+    console.log(produtos.produtos);
     return res.json(produtos);
 });
 
