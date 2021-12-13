@@ -71,4 +71,4 @@ server.delete('/produtos/:index', (req, res) => {
     return res.json({ message: "O produto foi excluido" });
 });
 
-server.listen(3000);
+server.listen(8080);
